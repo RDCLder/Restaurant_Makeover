@@ -1,0 +1,135 @@
+
+header {
+    position: relative;
+    background-color: black;
+    height: 500px;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+position: absolute;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: 0;
+-ms-transform: translateX(-50%) translateY(-50%);
+-moz-transform: translateX(-50%) translateY(-50%);
+-webkit-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+position: relative;
+z-index: 2;
+}
+
+header .overlay {
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+background-color: black;
+opacity: 0.5;
+z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+    header {
+        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+    header video {
+        display: none;
+    }
+}
+
+a:link, a:visited, a:active {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+#carousel {
+    height: 450px;
+    width: 700px;
+}
+
+.card {
+    height: 500px;
+    width: 800px;
+}
+
+#parallax {
+    opacity: 1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.parallax1 {
+    background-image: url("../media/parallax1.jpg");
+}
+
+.parallax2 {
+    background-image: url("../media/parallax2.jpg");
+}
+
+.coldDishes {
+    background-image: url("../media/coldDishes.jpg");
+}
+
+.roastDuck {
+    background-image: url("../media/roastDuck.jpg");
+}
+
+.hotDishes {
+    background-image: url("../media/hotDishes.jpg");
+}
+
+.staples {
+    background-image: url("../media/staples.jpg");
+}
+
+.pic {
+    width: auto;
+    height: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.pic:hover > .hoverlay {
+    position: absolute;
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:#000;
+    opacity:0.5;
+    z-index: 100;
+    display: block;
+}
+
+.info {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    text-align: center;
+}
